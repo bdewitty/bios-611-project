@@ -2,3 +2,5 @@ Example Git Project
 ===================
 
 R Markdown: Hello there!
+
+Commit Number 2 Electric Boogaloo
