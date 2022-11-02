@@ -1,5 +1,6 @@
 FROM rocker/verse 
 RUN R -e "install.packages(\"matlab\")"
+RUN Rscript -e "install.packages('tidyverse')"
 RUN Rscript -e "install.packages('ggplot2')"
 RUN Rscript -e "install.packages('plyr')"
 RUN Rscript -e "install.packages('reshape2')"

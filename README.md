@@ -34,14 +34,6 @@ Login to R studio with:
   password:some-password
 
 
-In the R console install the needed packages:
-
-```{R}
-library(tidyverse)
-install.packages("reshape2")
-library(reshape2)
-```
-
 To build the final report, visit the terminal in RStudio and type
 
 ```

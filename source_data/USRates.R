@@ -9,7 +9,7 @@ USrates<-USratesall %>% select(-"pregnancyratelt15", -"pregnancyratelt20", -"abo
 
 write_csv(USrates, "derived_data/USrates.csv")
 
-USpregnancyrates<-USrates %>% select("year", "state", -"pregnancyrate1519", contains("pregnancyrate"));
+USpregnancyrates<-USrates %>% select("year", "state", contains("pregnancyrate"), -"pregnancyrate1519");
 
 write_csv(USpregnancyrates, "derived_data/USpregnancyrates.csv");
 
@@ -19,7 +19,7 @@ write_csv(USabortionrates, "derived_data/USabortionrates.csv");
 
 USbirthrates<-USrates %>% select("year", "state", contains("birthrate"), -"birthrate1519");
 
-write_csv(USbirthrates, "derived_data/USabortionrates.csv")
+write_csv(USbirthrates, "derived_data/USbirthrates.csv")
 
 
 
