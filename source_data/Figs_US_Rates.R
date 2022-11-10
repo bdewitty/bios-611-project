@@ -35,3 +35,12 @@ Figure_3<-Figure_3+labs(
 Figure_3
 saveRDS(Figure_3,file="figures/Figure3.rds")
 readRDS("figures/Figure3.rds")
+
+pdf("USfigures.pdf")
+par( mfrow= c(3,2) )
+plot(Figure_1)
+plot(Figure_2)
+plot(Figure_3)
+dev.off()
+
+USfigures.pdf
