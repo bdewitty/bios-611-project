@@ -52,5 +52,3 @@ USbirthrates<-USrates %>%
 write_csv(USbirthrates, "derived_data/USbirthrates.csv")
 
 
-
-

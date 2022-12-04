@@ -9,11 +9,13 @@ NCdata<-filter(df, state=="NC", year>=2007);
 NCratesall<-NCdata %>% select( "year", "state", contains("pregnancyrate") | 
                                  contains("abortionrate") | 
                                  contains("birthrate"))
+NCratesall
 NCrates<-NCratesall %>% 
   select(-contains("ratelt15"), -contains("1517"), -contains("1819"))
 
-NCrates<-USrates %>%
+NCrates<-NCrates %>%
   select(-contains("1519"))
+NCrates
 
 write_csv(NCrates, "derived_data/NCrates.csv")
 
@@ -41,7 +43,10 @@ NCabortionrates<-NCrates %>%
           "Total"="abortionratetotal"
   )
 
-write_csv(NCabortionrates, "derived_data/NCabortionrates.csv");
+
+NCabortrateslong <- melt(NCabortionrates, id.vars=c("year","state"))
+NCabortrates<- NCabortrateslong %>% rename(Age=variable, Rate=value);
+write_csv(NCabortrates, "derived_data/NCabortionrates.csv");
 
 NCbirthrates<-NCrates %>% 
   select("year", "state", contains("birthrate")) %>%
