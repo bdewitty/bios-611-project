@@ -1,4 +1,4 @@
-Abortion Rates and Policy in the United States
+Abortion Policy in the United States
 ===============
 
 Introduction
@@ -12,9 +12,9 @@ groups including ages 14 and younger, 15-17, 18-19, 20-24, 25-29, 30-34, 35-39, 
 women aged 40 or older. Other categories of young pregnancies include age 15-19 and younger than 20. 
 
 ```
-readRDS("figures/Figure1.rds")
-readRDS("figures/Figure2.rds")
-readRDS("figures/Figure3.rds")
+![d3 visualization](.figures/Figure1.rds)
+![d3 visualization](.figures/Figure2.rds)
+![d3 visualization](.figures/Figure3.rds)
 ```
 
 Using this Repository
