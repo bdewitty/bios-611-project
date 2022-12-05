@@ -11,12 +11,6 @@ rates are reported by year and age group. The time period ranges from 1973-2017.
 groups including ages 14 and younger, 15-17, 18-19, 20-24, 25-29, 30-34, 35-39, and 
 women aged 40 or older. Other categories of young pregnancies include age 15-19 and younger than 20. 
 
-```
-![d3 visualization](.figures/Figure1.rds)
-![d3 visualization](.figures/Figure2.rds)
-![d3 visualization](.figures/Figure3.rds)
-```
-
 Using this Repository
 ---------------------
 This repository is best used via Docker although you may be able to consult the Dockerfile to understand what requirements are appropriate to run the code. Through docker, you will create a separate environment, or a virtual computer, that contains all the resources needed to view and interact with this project without putting a burden on your own personal computer.
